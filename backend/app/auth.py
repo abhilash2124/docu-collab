@@ -9,12 +9,16 @@ from .database import get_db
 from .models import User
 from .schemas import UserLogin, UserRegister, TokenResponse
 from fastapi.security import HTTPAuthorizationCredentials, HTTPBearer
+import os
 
 security = HTTPBearer()
 
 router = APIRouter(prefix="/auth", tags=["Authentication"])
 
-SECRET_KEY = "paradise-got-lost"
+SECRET_KEY = os.getenv(
+    "SECRET_KEY",
+    "dev-secret-key-change-in-production"
+)
 ALGORITHM = "HS256"
 ACCESS_TOKEN_EXPIRE_MINUTES = 60
 
