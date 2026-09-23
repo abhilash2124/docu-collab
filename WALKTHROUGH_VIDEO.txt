@@ -1,0 +1,57 @@
+DocuCollab — Ajaia Assessment Walkthrough
+
+Video URL:
+https://drive.google.com/file/d/1bFwPQ0KSCVm1_3xtbA0xH9hlzZ1D4mSR/view?usp=sharing
+
+Target duration:
+3–5 minutes
+
+Walkthrough sequence:
+
+1. Open the deployed application:
+   https://docu-collab.vercel.app
+
+2. Register or log in with a test account.
+
+3. Show the dashboard:
+   - Owned documents
+   - Shared documents section
+
+4. Create a new document.
+
+5. Demonstrate rich-text editing:
+   - Bold
+   - Italic
+   - Underline
+   - Heading
+   - Bulleted list
+   - Numbered list
+
+6. Save the document.
+
+7. Refresh/reopen the document and demonstrate that the content and formatting persist.
+
+8. Return to the dashboard and demonstrate `.txt` file import.
+
+9. Open the imported document and show that it is editable.
+
+10. Demonstrate document sharing:
+    - Open an owned document
+    - Share it with a second registered test account
+    - Log in as the second account
+    - Open the Shared With Me section
+    - Open the shared document
+    - Demonstrate that the shared user can view it but cannot edit it
+
+11. Briefly show the deployed architecture:
+    Vercel → Render → Neon PostgreSQL
+
+12. Mention the main scope trade-off:
+    The current implementation provides document sharing but does not implement real-time simultaneous editing.
+
+13. End by showing the live application URL.
+
+Important:
+- Do not show passwords, API keys, JWT secrets, or database connection strings.
+- Do not show browser tabs containing private information.
+- Keep the walkthrough between 3 and 5 minutes.
